@@ -6,7 +6,7 @@
 
 ## 🌐 Live Demo
 
-🚧 Próximamente en Vercel
+🔗 https://zipaquirafc.vercel.app/
 
 ---
 
