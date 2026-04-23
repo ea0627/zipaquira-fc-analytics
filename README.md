@@ -1,36 +1,188 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zipaquirá FC Analytics ⚽📊
 
-## Getting Started
+> 🚀 Sports analytics dashboard built to visualize and analyze the performance of **Zipaquirá Futbol Club**.
 
-First, run the development server:
+---
+
+## 🌐 Live Demo
+
+🚧 Próximamente en Vercel
+
+---
+
+## 📌 Descripción
+
+**Zipaquirá FC Analytics** es una aplicación web desarrollada con **Next.js** que presenta información deportiva del club en un formato de dashboard moderno, claro y visualmente atractivo.
+
+El objetivo del proyecto es transformar datos futbolísticos en **insights comprensibles**, combinando diseño, estructura y visualización de datos en una experiencia de producto real.
+
+---
+
+## 🎯 Objetivo del proyecto
+
+Este proyecto está diseñado como pieza de portafolio para demostrar:
+
+- 🎨 Diseño de interfaces modernas (UI/UX)
+- 🧱 Arquitectura frontend escalable
+- ♻️ Componentización limpia y reutilizable
+- 📊 Visualización de datos deportivos
+- 🧠 Pensamiento de producto
+- 🚀 Buenas prácticas de desarrollo y despliegue
+
+---
+
+## 🧠 Propuesta de valor
+
+A diferencia de una web tradicional, este proyecto funciona como:
+
+> 📊 Un dashboard analítico que permite entender el rendimiento del equipo de forma visual e interactiva.
+
+---
+
+## 🛠️ Stack tecnológico
+
+- ⚛️ Next.js (App Router)
+- ⚛️ React
+- 🟨 JavaScript
+- 🎨 CSS
+- 🔧 Git & GitHub
+- ☁️ Vercel (Deployment)
+
+---
+
+## 🧩 Vistas principales
+
+- 🏠 Overview (Dashboard principal)
+- ⚽ Partidos
+- 📊 Tabla de posiciones
+- 👥 Jugadores
+- 📈 Analytics
+
+---
+
+## 🚧 Estado del proyecto
+
+🚀 Proyecto en desarrollo activo.
+
+### ✔️ Completado
+- ⚙️ Setup inicial con Next.js
+- 🧹 Limpieza de proyecto base
+- 🗂️ Arquitectura de carpetas
+- 🔀 Rutas principales
+- 🧱 Layout base (Sidebar + Topbar)
+
+### 🔄 En progreso
+- 🎨 Sistema de componentes UI
+- 🏠 Construcción de la vista Overview
+
+---
+
+## ⚙️ Instalación local
 
 ```bash
+git clone https://github.com/ea0627/zipaquira-fc-analytics.git
+cd zipaquira-fc-analytics
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir en el navegador:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📁 Estructura del proyecto
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+src/
+├── app/
+│   ├── analytics/
+│   ├── jugadores/
+│   ├── partidos/
+│   ├── tabla/
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
+├── components/
+│   ├── analytics/
+│   ├── layout/
+│   ├── matches/
+│   ├── overview/
+│   ├── players/
+│   ├── standings/
+│   └── ui/
+├── data/
+├── styles/
+└── utils/
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🗺️ Roadmap
 
-## Deploy on Vercel
+### 🧱 Fase 1 — Base del proyecto
+- [x] Crear proyecto Next.js
+- [x] Limpiar archivos iniciales
+- [x] Crear estructura de carpetas
+- [x] Crear rutas principales
+- [x] Crear layout base
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🎨 Fase 2 — UI base
+- [ ] Componentes reutilizables (UI)
+- [ ] Sidebar avanzado
+- [ ] Topbar dinámico
+- [ ] Cards base
+- [ ] Sistema de badges
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🏠 Fase 3 — Overview
+- [ ] Hero del club
+- [ ] KPIs principales
+- [ ] Últimos resultados
+- [ ] Resumen competitivo
+
+### 📊 Fase 4 — Datos
+- [ ] Datos mock estructurados
+- [ ] Integración de partidos
+- [ ] Integración de tabla
+- [ ] Integración de jugadores
+
+### 📈 Fase 5 — Analytics
+- [ ] Gráficas con Recharts
+- [ ] Insights visuales
+- [ ] Comparativas
+
+### 🚀 Fase 6 — Publicación
+- [ ] Responsive completo
+- [ ] Screenshots en README
+- [ ] Deploy en Vercel
+- [ ] Integración al portafolio
+
+---
+
+## 💡 Futuras mejoras
+
+- 🔐 Autenticación de usuario
+- 🖥️ Backend propio (Node.js)
+- 🌐 Integración con API real
+- ⚖️ Comparación entre jugadores
+- 📤 Exportación de estadísticas
+- 🌙 Modo oscuro / claro
+
+---
+
+## 👨‍💻 Autor
+
+**Eduardo Andrés Amaya Muñoz**  
+💻 Frontend Developer
+
+- 🔗 GitHub: https://github.com/ea0627  
+- 🌐 Portafolio: https://portafolio-ea.vercel.app/
+
+---
+
+## 📄 Licencia
+
+📚 Este proyecto fue creado con fines educativos y de portafolio.
