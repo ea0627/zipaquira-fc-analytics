@@ -1,3 +1,11 @@
-export default function Badge({ children, tone = "default" }) {
-  return <span className={`badge badge--${tone}`}>{children}</span>;
+export default function Badge({
+  children,
+  tone = "neutral",
+  variant = "solid",
+}) {
+  return (
+    <span className={`badge badge--${tone} badge--${variant}`}>
+      {children}
+    </span>
+  );
 }

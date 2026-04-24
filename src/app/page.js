@@ -29,11 +29,6 @@ export default function Home() {
           <Badge>Dashboard</Badge>
           <Badge tone="warning">En desarrollo</Badge>
         </div>
-
-        <Card className="card--highlight">
-          <h3>Card base</h3>
-          <p>Componente reutilizable para bloques del dashboard.</p>
-        </Card>
       </SectionCard>
     </>
   );

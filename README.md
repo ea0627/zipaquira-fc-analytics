@@ -131,11 +131,11 @@ src/
 - [x] Crear layout base
 
 ### 🎨 Fase 2 — UI base
-- [ ] Componentes reutilizables (UI)
-- [ ] Sidebar avanzado
-- [ ] Topbar dinámico
-- [ ] Cards base
-- [ ] Sistema de badges
+- [x] Componentes reutilizables (UI)
+- [x] Sidebar avanzado
+- [x] Topbar dinámico
+- [x] Cards base
+- [x] Sistema de badges
 
 ### 🏠 Fase 3 — Overview
 - [ ] Hero del club
