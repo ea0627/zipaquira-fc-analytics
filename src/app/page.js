@@ -2,6 +2,7 @@ import Badge from "@/components/ui/Badge";
 import PageHeader from "@/components/ui/PageHeader";
 import SectionCard from "@/components/ui/SectionCard";
 import StatCard from "@/components/ui/StatCard";
+import Card from "@/components/ui/Card";
 
 export default function Home() {
   return (
@@ -28,6 +29,11 @@ export default function Home() {
           <Badge>Dashboard</Badge>
           <Badge tone="warning">En desarrollo</Badge>
         </div>
+
+        <Card className="card--highlight">
+          <h3>Card base</h3>
+          <p>Componente reutilizable para bloques del dashboard.</p>
+        </Card>
       </SectionCard>
     </>
   );
