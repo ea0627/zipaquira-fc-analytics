@@ -313,3 +313,10 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+.sidebar__link--active {
+  color: #ffffff;
+  background: rgba(47, 168, 79, 0.16);
+  border: 1px solid rgba(47, 168, 79, 0.35);
+  box-shadow: inset 4px 0 0 #2fa84f;
+}
