@@ -3,21 +3,41 @@ import PageHeader from "@/components/ui/PageHeader";
 import SectionCard from "@/components/ui/SectionCard";
 import StatCard from "@/components/ui/StatCard";
 import Card from "@/components/ui/Card";
+import club from "@/data/club";
 
 export default function Home() {
   return (
     <>
       <PageHeader
         eyebrown="Overview"
-        title="Zipaquira FC"
-        description="Dashboard deportivo para visualizar el rendimiento del club, sus partidos, jugadores y métricas principales."
+        title={club.productName}
+        description={`Dashboard deportivo para visualizar el rendimiento de ${club.name}, sus partidos, jugadores y métricas principales.`}
       />
 
       <div className="stats-grid">
-        <StatCard label="Posición" value="#5" helper="Serie IV.18" />
-        <StatCard label="Victorias" value="4" helper="Rendimiento positivo" tone="success" />
-        <StatCard label="Derrotas" value="1" helper="Últimas jornadas" tone="danger" />
-        <StatCard label="Diferencia gol" value="+7" helper="Balance competitivo" tone="warning" />
+        <StatCard 
+          label="Posición" 
+          value={`#${club.stats.position}`} 
+          helper={club.league} 
+        />
+        <StatCard 
+          label="Victorias"
+          value={club.stats.wins}
+          helper="Rendimiento positivo" 
+          tone="success" 
+        />
+        <StatCard 
+          label="Derrotas"
+          value={club.stats.losses}
+          helper="Últimas jornadas"
+          tone="danger" 
+        />
+        <StatCard 
+          label="Diferencia gol"
+          value={`+${club.stats.goalDifference}`}
+          helper={`${club.stats.goalsFor} GF / ${club.stats.goalsAgainst} GC`}
+          tone="warning"
+        />
       </div>
 
       <SectionCard
