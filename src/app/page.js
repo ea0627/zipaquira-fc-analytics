@@ -6,6 +6,7 @@ import Card from "@/components/ui/Card";
 import club from "@/data/club";
 import RecentResults from "@/components/overview/RecentResults";
 import UpcomingMatch from "@/components/overview/UpcomingMatch";
+import TeamHero from "@/components/overview/TeamHero";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
         title={club.productName}
         description={`Dashboard deportivo para visualizar el rendimiento de ${club.name}, sus partidos, jugadores y métricas principales.`}
       />
+
+      <TeamHero />
 
       <div className="stats-grid">
         <StatCard 
