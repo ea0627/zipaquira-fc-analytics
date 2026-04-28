@@ -4,6 +4,7 @@ import SectionCard from "@/components/ui/SectionCard";
 import StatCard from "@/components/ui/StatCard";
 import Card from "@/components/ui/Card";
 import club from "@/data/club";
+import RecentResults from "@/components/overview/RecentResults";
 
 export default function Home() {
   return (
@@ -50,6 +51,8 @@ export default function Home() {
           <Badge tone="warning">En desarrollo</Badge>
         </div>
       </SectionCard>
+
+      <RecentResults />
     </>
   );
 }

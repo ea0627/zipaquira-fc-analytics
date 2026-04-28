@@ -413,3 +413,61 @@ select {
   border-color: rgba(0, 174, 239, 0.5);
   color: #7ad9ff;
 }
+
+.recent-results {
+  display: grid;
+  gap: 14px;
+}
+
+.recent-result {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 16px;
+  border: 1px solid #2a3342;
+  border-radius: 16px;
+  background: #1c2330;
+}
+
+.recent-result__round {
+  margin-bottom: 4px;
+  color: #7f8a9a;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.recent-result__opponent {
+  color: #f5f7fa;
+  font-size: 1rem;
+}
+
+.recent-result__meta {
+  margin-top: 5px;
+  color: #aab4c3;
+  font-size: 0.85rem;
+}
+
+.recent-result__score {
+  display: flex;
+  min-width: 120px;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.recent-result__score strong {
+  color: #f5f7fa;
+  font-size: 1.15rem;
+}
+
+@media (max-width: 600px) {
+  .recent-result {
+    flex-direction: column;
+  }
+
+  .recent-result__score {
+    align-items: flex-start;
+  }
+}
