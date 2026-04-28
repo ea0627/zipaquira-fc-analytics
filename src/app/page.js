@@ -7,6 +7,7 @@ import club from "@/data/club";
 import RecentResults from "@/components/overview/RecentResults";
 import UpcomingMatch from "@/components/overview/UpcomingMatch";
 import TeamHero from "@/components/overview/TeamHero";
+import CompetitiveSummary from "@/components/overview/CompetitiveSummary";
 
 export default function Home() {
   return (
@@ -59,6 +60,8 @@ export default function Home() {
       <RecentResults />
 
       <UpcomingMatch />
+
+      <CompetitiveSummary />
     </>
   );
 }

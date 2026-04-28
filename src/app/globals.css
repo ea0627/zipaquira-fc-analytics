@@ -610,3 +610,49 @@ select {
     font-size: 1.6rem;
   }
 }
+
+.competitive-summary {
+  display: grid;
+  gap: 18px;
+}
+
+.competitive-summary__label {
+  margin-bottom: 8px;
+  color: #7f8a9a;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.competitive-summary__value {
+  display: block;
+  color: #f5f7fa;
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.competitive-summary__helper {
+  margin-top: 8px;
+  color: #aab4c3;
+  font-size: 0.9rem;
+}
+
+.competitive-summary__progress {
+  height: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #1c2330;
+}
+
+.competitive-summary__progress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #146b3a, #2fa84f);
+}
+
+.competitive-summary__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

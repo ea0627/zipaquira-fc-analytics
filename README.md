@@ -138,10 +138,10 @@ src/
 - [x] Sistema de badges
 
 ### 🏠 Fase 3 — Overview
-- [ ] Hero del club
-- [ ] KPIs principales
-- [ ] Últimos resultados
-- [ ] Resumen competitivo
+- [x] Hero del club
+- [x] KPIs principales
+- [x] Últimos resultados
+- [x] Resumen competitivo
 
 ### 📊 Fase 4 — Datos
 - [ ] Datos mock estructurados
