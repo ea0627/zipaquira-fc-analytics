@@ -5,6 +5,7 @@ import StatCard from "@/components/ui/StatCard";
 import Card from "@/components/ui/Card";
 import club from "@/data/club";
 import RecentResults from "@/components/overview/RecentResults";
+import UpcomingMatch from "@/components/overview/UpcomingMatch";
 
 export default function Home() {
   return (
@@ -53,6 +54,8 @@ export default function Home() {
       </SectionCard>
 
       <RecentResults />
+
+      <UpcomingMatch />
     </>
   );
 }

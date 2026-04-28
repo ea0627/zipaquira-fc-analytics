@@ -471,3 +471,52 @@ select {
     align-items: flex-start;
   }
 }
+
+.upcoming-match {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.upcoming-match__round {
+  margin-bottom: 6px;
+  color: #7f8a9a;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.upcoming-match__opponent {
+  color: #f5f7fa;
+  font-size: 1.2rem;
+}
+
+.upcoming-match__meta {
+  margin-top: 6px;
+  color: #aab4c3;
+  font-size: 0.85rem;
+}
+
+.upcoming-match__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.upcoming-match__date {
+  color: #aab4c3;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .upcoming-match {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .upcoming-match__details {
+    align-items: flex-start;
+  }
+}
