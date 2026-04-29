@@ -146,8 +146,8 @@ src/
 ### 📊 Fase 4 — Datos
 - [x] Datos mock estructurados
 - [x] Integración de partidos
-- [ ] Integración de tabla
-- [ ] Integración de jugadores
+- [x] Integración de tabla
+- [x] Integración de jugadores
 
 ### 📈 Fase 5 — Analytics
 - [ ] Gráficas con Recharts

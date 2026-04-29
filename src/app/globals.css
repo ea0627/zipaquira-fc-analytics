@@ -737,3 +737,80 @@ select {
     #1c2330;
   box-shadow: inset 4px 0 0 #2fa84f;
 }
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.player-card {
+  padding: 20px;
+  border: 1px solid #2a3342;
+  border-radius: 18px;
+  background: #1c2330;
+}
+
+.player-card__avatar {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #0b3d2e, #146b3a);
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.player-card__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.player-card__header h3 {
+  color: #f5f7fa;
+  font-size: 1rem;
+}
+
+.player-card__header p {
+  margin-top: 5px;
+  color: #aab4c3;
+  font-size: 0.85rem;
+}
+
+.player-card__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.player-card__stats span {
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(14, 17, 23, 0.55);
+  color: #7f8a9a;
+  font-size: 0.78rem;
+}
+
+.player-card__stats strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #f5f7fa;
+  font-size: 1.15rem;
+}
+
+@media (max-width: 1100px) {
+  .players-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .players-grid {
+    grid-template-columns: 1fr;
+  }
+}
