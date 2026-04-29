@@ -144,7 +144,7 @@ src/
 - [x] Resumen competitivo
 
 ### 📊 Fase 4 — Datos
-- [ ] Datos mock estructurados
+- [x] Datos mock estructurados
 - [ ] Integración de partidos
 - [ ] Integración de tabla
 - [ ] Integración de jugadores
