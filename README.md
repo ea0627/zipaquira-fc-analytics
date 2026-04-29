@@ -145,7 +145,7 @@ src/
 
 ### 📊 Fase 4 — Datos
 - [x] Datos mock estructurados
-- [ ] Integración de partidos
+- [x] Integración de partidos
 - [ ] Integración de tabla
 - [ ] Integración de jugadores
 
@@ -157,8 +157,8 @@ src/
 ### 🚀 Fase 6 — Publicación
 - [ ] Responsive completo
 - [ ] Screenshots en README
-- [ ] Deploy en Vercel
-- [ ] Integración al portafolio
+- [x] Deploy en Vercel
+- [x] Integración al portafolio
 
 ---
 

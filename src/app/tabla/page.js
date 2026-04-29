@@ -1,8 +1,18 @@
+import PageHeader from "@/components/ui/PageHeader";
+import StandingsTable from "@/components/standings/StandingsTable";
+import StandingsSummary from "@/components/standings/StandingsSummary";
+
 export default function TablaPage() {
   return (
-    <main>
-      <h1>Tabla</h1>
-      <p>Vista en construcción.</p>
-    </main>
+    <>
+      <PageHeader
+        eyebrow="Tabla"
+        title="Tabla de posiciones"
+        description="Consulta el contexto competitivo del equipo dentro de su serie actual."
+      />
+
+      <StandingsSummary />
+      <StandingsTable />
+    </>
   );
 }

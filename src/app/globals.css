@@ -692,3 +692,48 @@ select {
 .matches-table__row strong {
   color: #f5f7fa;
 }
+
+.standings-table {
+  display: grid;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.standings-table__head,
+.standings-table__row {
+  display: grid;
+  grid-template-columns: 70px minmax(220px, 1fr) repeat(8, 64px);
+  gap: 12px;
+  align-items: center;
+  min-width: 920px;
+}
+
+.standings-table__head {
+  padding: 0 14px 10px;
+  color: #7f8a9a;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.standings-table__row {
+  padding: 14px;
+  border: 1px solid #2a3342;
+  border-radius: 16px;
+  background: #1c2330;
+  color: #aab4c3;
+}
+
+.standings-table__row strong,
+.standings-table__row span:nth-child(2) {
+  color: #f5f7fa;
+}
+
+.standings-table__row--highlight {
+  border-color: rgba(47, 168, 79, 0.55);
+  background:
+    radial-gradient(circle at right, rgba(47, 168, 79, 0.18), transparent 36%),
+    #1c2330;
+  box-shadow: inset 4px 0 0 #2fa84f;
+}
