@@ -7,6 +7,7 @@ import {
   YAxis,
   Tooltip,
   ResponsiveContainer,
+  CartesianGrid,
 } from "recharts";
 
 import matches from "@/data/matches";
@@ -17,27 +18,35 @@ const resultPoints = {
   L: 0,
 };
 
-const getFormData = () =>
-  matches
-    .filter((match) => match.status === "Finalizado")
-    .sort((a, b) => a.round - b.round)
-    .map((match) => ({
-      round: `J${match.round}`,
-      points: resultPoints[match.result],
-      result: match.result,
-    }));
+const chartData = matches
+  .filter((match) => match.status === "Finalizado")
+  .sort((a, b) => a.round - b.round)
+  .map((match) => ({
+    round: `J${match.round}`,
+    points: resultPoints[match.result],
+    result: match.result,
+  }));
 
 export default function FormChart() {
-  const data = getFormData();
-
   return (
-    <div style={{ width: "100%", height: 300 }}>
-      <ResponsiveContainer>
-        <BarChart data={data}>
-          <XAxis dataKey="round" />
-          <YAxis domain={[0, 3]} />
-          <Tooltip />
-          <Bar dataKey="points" fill="#2fa84f" radius={[8, 8, 0, 0]} />
+    <div className="chart-box">
+      <ResponsiveContainer width="100%" height={300}>
+        <BarChart data={chartData}>
+          <CartesianGrid stroke="#2a3342" strokeDasharray="4 4" />
+          <XAxis dataKey="round" stroke="#aab4c3" />
+          <YAxis domain={[0, 3]} stroke="#aab4c3" />
+          <Tooltip contentStyle={{
+            background: "#151a22",
+            border: "1px solid #2a3342",
+            borderRadius: "12px",
+            color: "#f5f7fa",
+          }} />
+          <Bar
+            dataKey="points"
+            name="Puntos"
+            fill="#2fa84f"
+            radius={[10, 10, 0, 0]}
+          />
         </BarChart>
       </ResponsiveContainer>
     </div>

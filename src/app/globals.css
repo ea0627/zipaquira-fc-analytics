@@ -814,3 +814,16 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+.chart-box {
+  width: 100%;
+  padding-top: 8px;
+}
+
+.recharts-wrapper text {
+  fill: #aab4c3;
+}
+
+.recharts-legend-item-text {
+  color: #aab4c3 !important;
+}
