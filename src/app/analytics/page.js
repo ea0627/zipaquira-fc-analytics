@@ -1,6 +1,7 @@
 import PageHeader from "@/components/ui/PageHeader";
 import SectionCard from "@/components/ui/SectionCard";
 import PerformanceChart from "@/components/analytics/PerformanceChart";
+import FormChart from "@/components/analytics/FormChart";
 
 export default function AnalyticsPage() {
   return (
@@ -16,6 +17,12 @@ export default function AnalyticsPage() {
         description="Comparación entre goles a favor y en contra."
       >
         <PerformanceChart />
+      </SectionCard>
+      <SectionCard
+        title="Forma reciente"
+        description="Puntos obtenidos por jornada: victoria = 3, empate = 1, derrota = 0."
+      >
+        <FormChart />
       </SectionCard>
     </>
   );
