@@ -844,3 +844,31 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+.page-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.matches-table,
+.standings-table {
+  overflow-x: auto;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-card {
+    padding: 18px;
+  }
+
+  .page-header__title {
+    font-size: 1.8rem;
+  }
+}
