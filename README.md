@@ -150,9 +150,9 @@ src/
 - [x] Integración de jugadores
 
 ### 📈 Fase 5 — Analytics
-- [ ] Gráficas con Recharts
-- [ ] Insights visuales
-- [ ] Comparativas
+- [x] Gráficas con Recharts
+- [x] Insights visuales
+- [x] Comparativas
 
 ### 🚀 Fase 6 — Publicación
 - [ ] Responsive completo

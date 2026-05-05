@@ -10,23 +10,26 @@ export default function AnalyticsPage() {
       <PageHeader
         eyebrow="Analytics"
         title="Métricas e insights"
-        description="Visualización del rendimiento del equipo a lo largo de la temporada."
+        description="Visualización del rendimiento del equipo a lo largo de la temporada, con métricas calculadas desde los partidos disputados."
       />
 
       <AnalyticsSummary />
 
-      <SectionCard
-        title="Rendimiento por jornada"
-        description="Comparación entre goles a favor y en contra."
-      >
-        <PerformanceChart />
-      </SectionCard>
-      <SectionCard
-        title="Forma reciente"
-        description="Puntos obtenidos por jornada: victoria = 3, empate = 1, derrota = 0."
-      >
-        <FormChart />
-      </SectionCard>
+      <div className="analytics-grid">
+        <SectionCard
+          title="Rendimiento por jornada"
+          description="Comparación entre goles a favor y goles en contra."
+        >
+          <PerformanceChart />
+        </SectionCard>
+
+        <SectionCard
+          title="Forma reciente"
+          description="Puntos obtenidos por jornada: victoria = 3, empate = 1, derrota = 0."
+        >
+          <FormChart />
+        </SectionCard>
+      </div>
     </>
   );
 }
