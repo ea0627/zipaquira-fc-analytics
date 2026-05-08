@@ -94,6 +94,17 @@ http://localhost:3000
 
 ---
 
+## 🔐 Variables de entorno
+
+Para futuras integraciones con Hattrick CHPP, el proyecto usará variables de entorno.
+
+Copia el archivo de ejemplo:
+
+```bash
+cp .env.example .env.local
+```
+---
+
 ## 📸 Vistas del proyecto
 
 ### 🏠 Overview
