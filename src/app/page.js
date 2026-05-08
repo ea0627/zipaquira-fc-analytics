@@ -8,6 +8,7 @@ import RecentResults from "@/components/overview/RecentResults";
 import UpcomingMatch from "@/components/overview/UpcomingMatch";
 import TeamHero from "@/components/overview/TeamHero";
 import CompetitiveSummary from "@/components/overview/CompetitiveSummary";
+import ChppClubPreview from "@/components/overview/ChppClubPreview";
 
 export default function Home() {
   return (
@@ -62,6 +63,8 @@ export default function Home() {
       <UpcomingMatch />
 
       <CompetitiveSummary />
+
+      <ChppClubPreview />
     </>
   );
 }

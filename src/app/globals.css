@@ -933,3 +933,43 @@ select {
 .sidebar__link--active::after {
   transform: scaleX(1);
 }
+
+.chpp-preview {
+  display: grid;
+  gap: 18px;
+}
+
+.chpp-preview__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.chpp-preview__grid span {
+  padding: 14px;
+  border: 1px solid #2a3342;
+  border-radius: 14px;
+  background: rgba(28, 35, 48, 0.72);
+  color: #aab4c3;
+  font-size: 0.85rem;
+}
+
+.chpp-preview__grid strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #f5f7fa;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .chpp-preview__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .chpp-preview__grid {
+    grid-template-columns: 1fr;
+  }
+}
