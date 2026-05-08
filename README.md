@@ -155,7 +155,7 @@ src/
 - [x] Comparativas
 
 ### 🚀 Fase 6 — Publicación
-- [ ] Responsive completo
+- [x] Responsive completo
 - [ ] Screenshots en README
 - [x] Deploy en Vercel
 - [x] Integración al portafolio
