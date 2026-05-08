@@ -98,19 +98,19 @@ http://localhost:3000
 
 ```bash
 ### 🏠 Overview
-![Overview](./public/screenshots/overview.png)
+![Overview](public/screenshots/overview.png)
 
 ### ⚽ Partidos
-![Partidos](./public/screenshots/partidos.png)
+![Partidos](public/screenshots/partidos.png)
 
 ### 📊 Tabla de posiciones
-![Tabla](./public/screenshots/tabla.png)
+![Tabla](public/screenshots/tabla.png)
 
 ### 👥 Jugadores
-![Jugadores](./public/screenshots/jugadores.png)
+![Jugadores](public/screenshots/jugadores.png)
 
 ### 📈 Analytics
-![Analytics](./public/screenshots/analytics.png)
+![Analytics](public/screenshots/analytics.png)
 
 ```
 
