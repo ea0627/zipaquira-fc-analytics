@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import SectionCard from "@/components/ui/SectionCard";
 import Badge from "@/components/ui/Badge";
+import { getClubFromInternalApi } from "@/lib/hattrick/services/clubService";
 
 export default function ChppClubPreview() {
   const [club, setClub] = useState(null);
@@ -11,13 +12,7 @@ export default function ChppClubPreview() {
   useEffect(() => {
     async function fetchClub() {
       try {
-        const response = await fetch("/api/hattrick/club");
-
-        if (!response.ok) {
-          throw new Error("Error fetching CHPP club preview");
-        }
-
-        const data = await response.json();
+        const data = await getClubFromInternalApi();
         setClub(data);
         setStatus("success");
       } catch (error) {
