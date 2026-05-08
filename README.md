@@ -96,7 +96,6 @@ http://localhost:3000
 
 ## 📸 Vistas del proyecto
 
-```bash
 ### 🏠 Overview
 ![Overview](public/screenshots/overview.png)
 
@@ -112,7 +111,6 @@ http://localhost:3000
 ### 📈 Analytics
 ![Analytics](public/screenshots/analytics.png)
 
-```
 
 ---
 
