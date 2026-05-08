@@ -94,6 +94,28 @@ http://localhost:3000
 
 ---
 
+## 📸 Vistas del proyecto
+
+```bash
+### 🏠 Overview
+![Overview](./public/screenshots/overview.png)
+
+### ⚽ Partidos
+![Partidos](./public/screenshots/partidos.png)
+
+### 📊 Tabla de posiciones
+![Tabla](./public/screenshots/tabla.png)
+
+### 👥 Jugadores
+![Jugadores](./public/screenshots/jugadores.png)
+
+### 📈 Analytics
+![Analytics](./public/screenshots/analytics.png)
+
+```
+
+---
+
 ## 📁 Estructura del proyecto
 
 ```bash
@@ -156,7 +178,7 @@ src/
 
 ### 🚀 Fase 6 — Publicación
 - [x] Responsive completo
-- [ ] Screenshots en README
+- [x] Screenshots en README
 - [x] Deploy en Vercel
 - [x] Integración al portafolio
 
