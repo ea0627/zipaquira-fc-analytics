@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import SectionCard from "@/components/ui/SectionCard";
 import Badge from "@/components/ui/Badge";
-import { getClubFromInternalApi } from "@/lib/hattrick/services/clubService";
+import { getClubWithFallback } from "@/lib/hattrick/services/clubService";
 
 export default function ChppClubPreview() {
   const [club, setClub] = useState(null);
@@ -12,8 +12,8 @@ export default function ChppClubPreview() {
   useEffect(() => {
     async function fetchClub() {
       try {
-        const data = await getClubFromInternalApi();
-        setClub(data);
+        const result = await getClubWithFallback();
+        setClub(result);
         setStatus("success");
       } catch (error) {
         console.error(error);
@@ -37,27 +37,29 @@ export default function ChppClubPreview() {
 
       {status === "success" && club && (
         <div className="chpp-preview">
-          <Badge tone="success">API interna conectada</Badge>
+          <Badge tone={club.source === "api" ? "success" : "warning"}>
+            {club.source === "api" ? "API interna conectada" : "Fallback local activo"}
+          </Badge>
 
           <div className="chpp-preview__grid">
             <span>
               <strong>ID</strong>
-              {club.id}
+              {club.data.id}
             </span>
 
             <span>
               <strong>Club</strong>
-              {club.name}
+              {club.data.name}
             </span>
 
             <span>
               <strong>Liga</strong>
-              {club.league}
+              {club.data.league}
             </span>
 
             <span>
               <strong>País</strong>
-              {club.country}
+              {club.data.country}
             </span>
           </div>
         </div>
