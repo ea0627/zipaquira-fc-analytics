@@ -872,3 +872,64 @@ select {
     font-size: 1.8rem;
   }
 }
+
+.section-card,
+.stat-card,
+.player-card,
+.recent-result,
+.matches-table__row,
+.standings-table__row {
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.section-card:hover,
+.stat-card:hover,
+.player-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(47, 168, 79, 0.42);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+}
+
+.matches-table__row:hover,
+.standings-table__row:hover,
+.recent-result:hover {
+  border-color: rgba(47, 168, 79, 0.36);
+  background: rgba(28, 35, 48, 0.92);
+}
+
+.badge {
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+.badge:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.12);
+}
+
+.sidebar__link {
+  position: relative;
+}
+
+.sidebar__link::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 7px;
+  height: 1px;
+  background: rgba(47, 168, 79, 0.6);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.sidebar__link:hover::after,
+.sidebar__link--active::after {
+  transform: scaleX(1);
+}
